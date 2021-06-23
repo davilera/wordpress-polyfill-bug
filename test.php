@@ -14,8 +14,6 @@ add_action( 'admin_enqueue_scripts', function() {
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
 	$asset = include "{$dir}/dist/main.asset.php";
 
-	wp_enqueue_script( 'nab-components' );
-
 	wp_enqueue_script(
 		'nelio-test',
 		"{$url}/dist/main.js",
